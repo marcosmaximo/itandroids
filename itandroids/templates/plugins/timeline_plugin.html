@@ -1,0 +1,36 @@
+{% load i18n sekizai_tags lang_extras %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block "addblock" %}
+{% addtoblock "css" %}
+<link href="/media/css/timeline.css" media="screen" rel="stylesheet" type="text/css" />
+{% endaddtoblock %}
+{% endblock %}
+
+{% for timeline_entry in timeline %}
+<div class="timeline">
+	<div class="timeline_entry_bubble{% if forloop.first %} first_timeline_entry{% endif %}{% if forloop.last %} last_timeline_entry{% endif %}">
+		<div class="timeline_year">
+			{{ timeline_entry.year }}
+		</div>
+		<div class="timeline_outer_circle"></div>
+		<div class="timeline_inner_circle"></div>
+		<div class="timeline_entry_bubble_arrow_border"></div>
+		<div class="timeline_entry_bubble_arrow"></div>
+		<div>
+			<img class="timeline_entry_left_image" alt="{% trans "Timeline Entry Left Image" %}" src="{{ timeline_entry.left_image.url }}" />
+			<div class="timeline_entry_text">
+				<h3>{% prop_lang timeline_entry title LANGUAGE_CODE %}</h3>
+				<p>
+					{% prop_lang timeline_entry description LANGUAGE_CODE %}
+				</p>
+			</div>
+			<img class="timeline_entry_right_image" alt="{% trans "Timeline Entry Right Image" %}" src="{{ timeline_entry.right_image.url }}" />
+		</div>
+	</div>
+</div>
+{% empty %}
+<p>
+	{% trans "No timeline entries!" %}
+</p>
+{% endfor %}

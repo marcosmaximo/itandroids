@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load cms_tags sekizai_tags sidebar_utils %}
+
+{% block base_content %}
+{% addtoblock "css" %}
+<link href="/media/css/sidebars.css" media="screen" rel="stylesheet" type="text/css" />
+{% endaddtoblock %}
+<div id="leftbar" class="sidebar">
+	{% leftbar %}
+</div>
+<div id="center">
+	{% placeholder center %}
+</div>
+<div id="rightbar" class="sidebar">
+	{% rightbar %}
+</div>
+{% endblock %}

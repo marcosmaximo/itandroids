@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-08-12 11:55+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: admin.py:16
+msgid "Akismet API Key"
+msgstr ""
+
+#: admin.py:16
+msgid "Get a Wordpress Key from http://akismet.com/"
+msgstr ""
+
+#: admin.py:18
+msgid "ReCAPTCHA Public Key"
+msgstr ""
+
+#: admin.py:18 admin.py:19
+msgid "Get this from http://www.google.com/recaptcha"
+msgstr ""
+
+#: admin.py:19
+msgid "ReCAPTCHA Private Key"
+msgstr ""
+
+#: admin.py:36
+msgid ""
+"Akismet library is not installed. Use \"easy_install akismet\" or \"pip "
+"install akismet\"."
+msgstr ""
+
+#: admin.py:50
+msgid "The API Key is not valid."
+msgstr ""
+
+#: admin.py:58
+msgid ""
+"ReCAPTCHA library is not installed. Use \"easy_install recaptcha-client\" or "
+"\"pip install recaptcha-client\"."
+msgstr ""
+
+#: cms_plugins.py:17
+msgid "Contact Form"
+msgstr ""
+
+#: cms_plugins.py:25
+msgid "Spam Protection"
+msgstr ""
+
+#: cms_plugins.py:87
+msgid "No subject"
+msgstr ""
+
+#: models.py:20
+msgid "Email recipient"
+msgstr ""
+
+#: models.py:21
+msgid "Email sender label"
+msgstr ""
+
+#: models.py:21
+msgid "Your email address"
+msgstr "Naslov tvoje elektronske pošte"
+
+#: models.py:22
+msgid "Subject label"
+msgstr ""
+
+#: models.py:22
+msgid "Subject"
+msgstr "Zadeva"
+
+#: models.py:23
+msgid "Message content label"
+msgstr ""
+
+#: models.py:23
+msgid "Message"
+msgstr "Sporočilo"
+
+#: models.py:24
+msgid "Thanks message"
+msgstr ""
+
+#: models.py:24
+msgid "Message displayed on successful submit"
+msgstr ""
+
+#: models.py:24
+msgid "Thank you for your message."
+msgstr "Hvala za tvoje sporočilo."
+
+#: models.py:25
+msgid "Submit button value"
+msgstr ""
+
+#: models.py:25
+msgid "Submit"
+msgstr "Pošlji"
+
+#: models.py:27
+msgid "Spam protection method"
+msgstr ""
+
+#: models.py:33
+msgid "ReCAPTCHA theme"
+msgstr ""
+
+#: nospam/fields.py:13
+msgid "Please don't check this box."
+msgstr "Ne označi tega polja."
+
+#: nospam/forms.py:42
+msgid "Please enter the two words on the image separated by a space:"
+msgstr "Prepiši besedi prikazani na sliki, loči ju s presledkom:"
+
+#: nospam/forms.py:44
+msgid "You did not enter any of the words."
+msgstr "Nisi prepisal/a dveh besed prikazanih na sliki."
+
+#: nospam/forms.py:92
+msgid "You did not enter the two words shown in the image."
+msgstr "Nisi prepisal/a dveh besed prikazanih na sliki."
+
+#: nospam/forms.py:98
+msgid "The words you entered did not match the image."
+msgstr "Prepisani besedi se nista ujemali s sliko."
+
+#: nospam/widgets.py:30
+msgid "Are you a robot?"
+msgstr "Si robot?"
+
+#: templates/cmsplugin_contact/contact.html:39
+msgid "Incorrect please try again"
+msgstr "Nepravilno. Poskusi znova."
+
+#: templates/cmsplugin_contact/contact.html:42
+msgid "Enter the words above:"
+msgstr "Prepiši besedi odzgoraj:"
+
+#: templates/cmsplugin_contact/contact.html:43
+msgid "Enter the numbers you hear:"
+msgstr "Vnesi števila, ki jih slišiš:"
+
+#: templates/cmsplugin_contact/contact.html:48
+msgid "Get another CAPTCHA"
+msgstr "Ponudi drugo CAPTCHA"
+
+#: templates/cmsplugin_contact/contact.html:49
+msgid "Get an audio CAPTCHA"
+msgstr "Ponudi zvočno CAPTCHA"
+
+#: templates/cmsplugin_contact/contact.html:50
+msgid "Get an image CAPTCHA"
+msgstr "Ponudi slikovno CAPTCHA"
+
+#: templates/cmsplugin_contact/contact.html:52
+msgid "Help"
+msgstr "Pomoč"

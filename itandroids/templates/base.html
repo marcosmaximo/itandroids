@@ -1,0 +1,73 @@
+{% load cms_tags menu_tags sekizai_tags i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<html>
+	<head>
+		{% render_block "css" %}
+		{% addtoblock "css" %}
+		<link href="/media/css/base.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="/media/css/listing.css" media="screen" rel="stylesheet" type="text/css" />
+		{% endaddtoblock %}
+		{% addtoblock "js" %} <script src="/media/js/base.js"></script>
+		<script type="text/javascript">
+			// Acochambração para funcionar no Firefox 3
+change_value(document.getElementById('search_text'), '{% trans "Search..."  %}');</script>
+		{% endaddtoblock %} <title> ITAndroids </title>
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="menubar">
+				<div id="menu_parent">
+					<div id="menu">
+						{% show_menu %}
+					</div>
+				</div>
+			</div>
+			<!-- end #menubar -->
+			<div id="header">
+				<img id="itandroids_logo" alt="ITAndroids" src="/media/images/itandroids_logo.png" />
+				<img id="itandroids_name" alt="ITAndroids" src="/media/images/itandroids_name.png" />
+				<div id="header_right">
+					<div id="search">
+						<form action="." method="post">
+							<input id="search_text" type="text" value="{% trans "Search..." %}" name="search" onfocus="delete_hint(this)" onblur="delete_hint(this)" />
+							<input type="submit" value="" />
+							<!--<input type="submit" value="{% trans "Go" %}" />-->
+						</form>
+					</div>
+					<div id="header_icons">
+						<ul>
+							<li>
+								{% if LANGUAGE_CODE == "pt-br" %} <a href="{{ request.meta.domain }}/en/"> <img alt="English" src="/media/images/english.png" onmouseover="change_image(this, 'english_over.png')" onmouseout="change_image(this, 'english.png')" /> </a>
+								{% else %} <a href="{{ request.meta.domain }}/pt-BR/"> <img alt="Português Brasileiro" src="/media/images/brazil.png" onmouseover="change_image(this, 'brazil_over.png')" onmouseout="change_image(this, 'brazil.png')" /> </a>
+								{% endif %}
+							</li>
+							<li>
+								<a href="http://www.twitter.com"> <img alt="Twitter" src="/media/images/twitter.png" onmouseover="change_image(this, 'twitter_over.png')" onmouseout="change_image(this, 'twitter.png')" /> </a>
+							</li>
+							<li>
+								<a href="http://www.facebook.com"> <img alt="Facebook" src="/media/images/facebook.png" onmouseover="change_image(this, 'facebook_over.png')" onmouseout="change_image(this, 'facebook.png')" /> </a>
+							</li>
+							<li>
+								<a href="http://www.youtube.com"> <img alt="Youtube" src="/media/images/youtube.png" onmouseover="change_image(this, 'youtube_over.png')" onmouseout="change_image(this, 'youtube.png')" /> </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- end #header -->
+			<div id="content">
+				{% block base_content %}{% endblock %}
+			</div>
+			<!-- end #content -->
+			<div id="footer">
+				<p>
+					ITAndroids. Powered by: <a href="http://www.djangoproject.com"><img alt="django" src="/media/images/django.png" /></a>
+					<a href="http://www.django-cms.org"><img alt="django CMS" src="/media/images/django_cms.png" /></a>
+				</p>
+			</div>
+			<!-- end #footer -->
+		</div>
+		<!-- end #wrapper -->
+		{% render_block "js" %}
+	</body>
+</html>

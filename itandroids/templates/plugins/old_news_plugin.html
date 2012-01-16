@@ -1,0 +1,7 @@
+{% load l10n %}
+
+{% if news_list %}
+	{% for news in news_list %}
+		<p>{{ news.pub_date|localize }} - <a href="{{ news.page.get_absolute_url|safe }}">{{ news.title|safe }}</a></p>
+	{% endfor %}
+{% endif %}

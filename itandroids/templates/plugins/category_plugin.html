@@ -1,0 +1,24 @@
+{% load i18n lang_extras %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block "addblock" %}
+{% addtoblock "css" %}
+<link href="/media/css/categories.css" media="screen" rel="stylesheet" type="text/css" />
+{% endaddtoblock %}
+{% endblock %}
+
+{% for category in category_list %}
+<div class="entry category_entry{% if forloop.first %} first_entry{% endif %}{% if forloop.last %} last_entry{% endif %}">
+	<img class="entry_img" alt="{% trans "Category Image" %}" src="{{ category.image.url_320x240 }}" />
+	<div class="entry_text_wrapper">
+		<h3>{% prop_lang category title LANGUAGE_CODE %}</h3>
+		<p>
+			{% prop_lang category description LANGUAGE_CODE %}
+		</p>
+	</div>
+</div>
+{% empty %}
+<p>
+	{% trans "No categories!" %}
+</p>
+{% endfor %}

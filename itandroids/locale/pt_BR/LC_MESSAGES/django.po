@@ -1,0 +1,534 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-01-15 23:10-0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+
+#: admin.py:38
+msgid "Date Information"
+msgstr "Informação de Data"
+
+#: cms_plugins.py:12
+msgid "Category Plugin"
+msgstr "Categorias"
+
+#: cms_plugins.py:22
+msgid "Latest News Plugin"
+msgstr "Últimas Notícias"
+
+#: cms_plugins.py:32
+msgid "Old News Plugin"
+msgstr "Notícias Antigas"
+
+#: cms_plugins.py:42
+msgid "Member Plugin"
+msgstr "Membros"
+
+#: cms_plugins.py:47 models.py:64
+msgid "Members"
+msgstr "Membros"
+
+#: cms_plugins.py:48
+msgid "Ex-members"
+msgstr "Ex-membros"
+
+#: cms_plugins.py:59
+msgid "Timeline Plugin"
+msgstr "Linha do Tempo"
+
+#: models.py:12 models.py:26 models.py:37 models.py:104 models.py:156
+msgid "Title"
+msgstr "Título"
+
+#: models.py:13 models.py:27 models.py:38 models.py:105 models.py:157
+msgid "Title (English)"
+msgstr "Título (em Inglês)"
+
+#: models.py:14 models.py:55 models.py:158
+msgid "Description"
+msgstr "Descrição"
+
+#: models.py:15 models.py:56 models.py:159
+msgid "Description (English)"
+msgstr "Descrição (em Inglês)"
+
+#: models.py:16 models.py:108 models.py:120 models.py:132 models.py:144
+msgid "Image"
+msgstr "Imagem"
+
+#: models.py:22 models.py:92
+msgid "Category"
+msgstr "Categoria"
+
+#: models.py:23 models.py:52
+msgid "Categories"
+msgstr "Categorias"
+
+#: models.py:33 models.py:50
+msgid "Relationship with ITA"
+msgstr "Relação com o ITA"
+
+#: models.py:34
+msgid "Relationships with ITA"
+msgstr "Relações com o ITA"
+
+#: models.py:44
+msgid "Special Role in ITAndroids"
+msgstr "Cargo Especial na ITAndroids"
+
+#: models.py:45 models.py:51
+msgid "Special Roles in ITAndroids"
+msgstr "Cargos Especiais na ITAndroids"
+
+#: models.py:48 models.py:118 models.py:130 models.py:142
+msgid "Name"
+msgstr "Nome"
+
+#: models.py:49 models.py:51
+msgid "Optional field (you may leave it blank)."
+msgstr "Campo opcional (pode ser deixado em branco)."
+
+#: models.py:53 templates/plugins/member_plugin.html:38
+msgid "Entry Date"
+msgstr "Data de Entrada"
+
+#: models.py:53
+msgid ""
+"This date field will be displayed as \"mm yyyy\", so only month and year are "
+"relevant."
+msgstr ""
+"Este campo de data será exibido como \"mm aaaa\", então apenas mês e ano são "
+"relevantes."
+
+#: models.py:54 templates/plugins/member_plugin.html:41
+msgid "Leave Date"
+msgstr "Data de Saída"
+
+#: models.py:54
+msgid ""
+"This date field will be displayed as \"mm yyyy\", so only month and year are "
+"relevant. This field is optional (you may leave it blank)."
+msgstr ""
+"Este campo de data será exibido como \"mm aaaa\", então apenas mês e ano são "
+"relevantes. Este campo é opcional (pode ser deixado em branco)."
+
+#: models.py:57
+msgid "Photo"
+msgstr "Foto"
+
+#: models.py:57
+msgid ""
+"Resolution in page will be 100x100 (1:1 aspect ratio). Please, upload an "
+"image with resolution as near as possible to 100x100."
+msgstr ""
+"Resolução na página será 100x100 (proporção 1:1). Por favor, envie uma "
+"imagem com resolução o mais próxima possível de 100x100."
+
+#: models.py:63 models.py:73 models.py:82 models.py:91
+msgid "Member"
+msgstr "Membro"
+
+#: models.py:74 models.py:83
+msgid "Leader"
+msgstr "Líder"
+
+#: models.py:75 models.py:84
+msgid "Advisor"
+msgstr "Orientador"
+
+#: models.py:76 models.py:85
+msgid "Ex-member"
+msgstr "Ex-membro"
+
+#: models.py:77 models.py:86
+msgid "Ex-advisor"
+msgstr "Ex-orientador"
+
+#: models.py:90
+msgid "Role"
+msgstr "Cargo"
+
+#: models.py:95 templates/plugins/member_plugin.html:31
+msgid "of category"
+msgstr "da categoria"
+
+#: models.py:98
+msgid "Member-Category Association"
+msgstr "Associação Membro-Categoria"
+
+#: models.py:99
+msgid "Member-Category Associations"
+msgstr "Associações Membro-Categoria"
+
+#: models.py:102
+msgid "Date Created"
+msgstr "Data de Criação"
+
+#: models.py:103
+msgid "Last Modified"
+msgstr "Última Modificação"
+
+#: models.py:107
+msgid "Author"
+msgstr "Autor"
+
+#: models.py:108
+msgid ""
+"Resolution in page will be 320x240 (4:3 aspect ratio). Please, upload an "
+"image with resolution as near as possible to 320x240."
+msgstr ""
+"Resolução na página será 320x240 (proporção 4:3). Por favor, envie uma "
+"imagem com resolução mais próxima possível de 320x240."
+
+#: models.py:114
+msgid "News"
+msgstr "Noticia"
+
+#: models.py:115
+msgid "News (plural)"
+msgstr "Noticias"
+
+#: models.py:120 models.py:132 models.py:144
+msgid ""
+"Image in page will be 200 pixels wide (original aspect ratio will be "
+"maintained)."
+msgstr ""
+"Imagem na página terá 200 pixels de largura (proporção original será "
+"mantida)."
+
+#: models.py:126
+msgid "Sponsor"
+msgstr "Patrocinador"
+
+#: models.py:127
+msgid "Sponsors"
+msgstr "Patrocinadores"
+
+#: models.py:138
+msgid "Supporter"
+msgstr "Apoiador"
+
+#: models.py:139
+msgid "Supporters"
+msgstr "Apoiadores"
+
+#: models.py:145
+msgid "Start Date"
+msgstr "Data de Início"
+
+#: models.py:146
+msgid "End Date"
+msgstr "Data de Término"
+
+#: models.py:152
+msgid "Event"
+msgstr "Evento"
+
+#: models.py:153
+msgid "Events"
+msgstr "Eventos"
+
+#: models.py:160
+msgid "Year"
+msgstr "Ano"
+
+#: models.py:161
+msgid "Left Image"
+msgstr "Imagem da Esquerda"
+
+#: models.py:162
+msgid "Right Image"
+msgstr "Imagem da Direita"
+
+#: models.py:168
+msgid "Timeline Entry"
+msgstr "Registro da Linha do Tempo"
+
+#: models.py:169
+msgid "Timeline Entries"
+msgstr "Registros da Linha do Tempo"
+
+#: cmsplugin_contact/admin.py:16
+msgid "Akismet API Key"
+msgstr ""
+
+#: cmsplugin_contact/admin.py:16
+msgid "Get a Wordpress Key from http://akismet.com/"
+msgstr ""
+
+#: cmsplugin_contact/admin.py:18
+msgid "ReCAPTCHA Public Key"
+msgstr ""
+
+#: cmsplugin_contact/admin.py:18 cmsplugin_contact/admin.py:19
+msgid "Get this from http://www.google.com/recaptcha"
+msgstr ""
+
+#: cmsplugin_contact/admin.py:19
+msgid "ReCAPTCHA Private Key"
+msgstr ""
+
+#: cmsplugin_contact/admin.py:36
+msgid ""
+"Akismet library is not installed. Use \"easy_install akismet\" or \"pip "
+"install akismet\"."
+msgstr ""
+
+#: cmsplugin_contact/admin.py:50
+msgid "The API Key is not valid."
+msgstr ""
+
+#: cmsplugin_contact/admin.py:58
+msgid ""
+"ReCAPTCHA library is not installed. Use \"easy_install recaptcha-client\" or "
+"\"pip install recaptcha-client\"."
+msgstr ""
+
+#: cmsplugin_contact/cms_plugins.py:17
+msgid "Contact Form"
+msgstr ""
+
+#: cmsplugin_contact/cms_plugins.py:28
+#: cmsplugin_custom_contact/cms_plugins.py:26
+msgid "Spam Protection"
+msgstr ""
+
+#: cmsplugin_contact/cms_plugins.py:98
+msgid "No subject"
+msgstr ""
+
+#: cmsplugin_contact/models.py:21
+msgid "Email recipient"
+msgstr ""
+
+#: cmsplugin_contact/models.py:22
+msgid "Email sender label"
+msgstr ""
+
+#: cmsplugin_contact/models.py:23
+msgid "Your email address"
+msgstr ""
+
+#: cmsplugin_contact/models.py:25
+msgid "Subject label"
+msgstr ""
+
+#: cmsplugin_contact/models.py:26
+msgid "Subject"
+msgstr ""
+
+#: cmsplugin_contact/models.py:27
+msgid "Message content label"
+msgstr ""
+
+#: cmsplugin_contact/models.py:28
+msgid "Message"
+msgstr ""
+
+#: cmsplugin_contact/models.py:30
+msgid "Thanks message"
+msgstr ""
+
+#: cmsplugin_contact/models.py:31
+msgid "Message displayed on successful submit"
+msgstr ""
+
+#: cmsplugin_contact/models.py:32
+msgid "Thank you for your message."
+msgstr ""
+
+#: cmsplugin_contact/models.py:33
+msgid "Submit button value"
+msgstr ""
+
+#: cmsplugin_contact/models.py:34
+msgid "Submit"
+msgstr ""
+
+#: cmsplugin_contact/models.py:37
+msgid "Spam protection method"
+msgstr ""
+
+#: cmsplugin_contact/models.py:47
+msgid "ReCAPTCHA theme"
+msgstr ""
+
+#: cmsplugin_contact/nospam/fields.py:13
+msgid "Please don't check this box."
+msgstr ""
+
+#: cmsplugin_contact/nospam/forms.py:42
+msgid "Please enter the two words on the image separated by a space:"
+msgstr ""
+
+#: cmsplugin_contact/nospam/forms.py:44
+msgid "You did not enter any of the words."
+msgstr ""
+
+#: cmsplugin_contact/nospam/forms.py:92
+msgid "You did not enter the two words shown in the image."
+msgstr ""
+
+#: cmsplugin_contact/nospam/forms.py:98
+msgid "The words you entered did not match the image."
+msgstr ""
+
+#: cmsplugin_contact/nospam/widgets.py:30
+msgid "Are you a robot?"
+msgstr ""
+
+#: cmsplugin_contact/templates/cmsplugin_contact/contact.html:39
+#: templates/cmsplugin_contact/contact.html:45
+msgid "Incorrect please try again"
+msgstr ""
+
+#: cmsplugin_contact/templates/cmsplugin_contact/contact.html:42
+#: templates/cmsplugin_contact/contact.html:48
+msgid "Enter the words above:"
+msgstr ""
+
+#: cmsplugin_contact/templates/cmsplugin_contact/contact.html:43
+#: templates/cmsplugin_contact/contact.html:49
+msgid "Enter the numbers you hear:"
+msgstr ""
+
+#: cmsplugin_contact/templates/cmsplugin_contact/contact.html:48
+#: templates/cmsplugin_contact/contact.html:54
+msgid "Get another CAPTCHA"
+msgstr ""
+
+#: cmsplugin_contact/templates/cmsplugin_contact/contact.html:49
+#: templates/cmsplugin_contact/contact.html:55
+msgid "Get an audio CAPTCHA"
+msgstr ""
+
+#: cmsplugin_contact/templates/cmsplugin_contact/contact.html:50
+#: templates/cmsplugin_contact/contact.html:56
+msgid "Get an image CAPTCHA"
+msgstr ""
+
+#: cmsplugin_contact/templates/cmsplugin_contact/contact.html:52
+#: templates/cmsplugin_contact/contact.html:58
+msgid "Help"
+msgstr ""
+
+#: cmsplugin_custom_contact/cms_plugins.py:10
+msgid "Custom Contact Form"
+msgstr ""
+
+#: cmsplugin_custom_contact/models.py:7
+msgid "Instructions"
+msgstr ""
+
+#: cmsplugin_custom_contact/models.py:8
+msgid "To contact us, please use the form below."
+msgstr ""
+
+#: templates/base.html:13 templates/base.html.py:32
+msgid "Search..."
+msgstr "Buscar..."
+
+#: templates/base.html:34
+msgid "Go"
+msgstr "Ir"
+
+#: templates/leftbar.html:4
+msgid "Sponsorship"
+msgstr "Patrocínio"
+
+#: templates/leftbar.html:9
+msgid "Sponsor Image"
+msgstr "Imagem do Patrocinador"
+
+#: templates/leftbar.html:15
+msgid "No sponsors!"
+msgstr "Sem patrocinadores!"
+
+#: templates/leftbar.html:20
+msgid "Support"
+msgstr "Apoio"
+
+#: templates/leftbar.html:25
+msgid "Supporter Image"
+msgstr "Imagem do Apoiador"
+
+#: templates/leftbar.html:31
+msgid "No supporters!"
+msgstr "Sem apoiadores!"
+
+#: templates/rightbar.html:4
+msgid "Next Events"
+msgstr "Próximos Eventos"
+
+#: templates/rightbar.html:9
+msgid "Event Image"
+msgstr "Imagem"
+
+#: templates/rightbar.html:15
+msgid "No events!"
+msgstr "Sem eventos!"
+
+#: templates/rightbar.html:20
+msgid "Want to join us?"
+msgstr "Quer participar?"
+
+#: templates/rightbar.html:22
+msgid "Send an email to "
+msgstr "Envie um e-mail para "
+
+#: templates/rightbar.html:22
+msgid "ITAndroids RH Email"
+msgstr "rh@itandroids.ita.br"
+
+#: templates/plugins/category_plugin.html:12
+msgid "Category Image"
+msgstr "Imagem da Categoria"
+
+#: templates/plugins/category_plugin.html:22
+msgid "No categories!"
+msgstr "Sem categorias!"
+
+#: templates/plugins/lastest_news_plugin.html:12
+msgid "News Image"
+msgstr "Imagem da Notícia"
+
+#: templates/plugins/lastest_news_plugin.html:19
+msgid "No news!"
+msgstr "Sem notícias!"
+
+#: templates/plugins/member_plugin.html:13
+msgid "Member Photo"
+msgstr "Foto do Membro"
+
+#: templates/plugins/member_plugin.html:15
+msgid "Lattes"
+msgstr "Lattes"
+
+#: templates/plugins/member_plugin.html:50
+msgid "Nobody"
+msgstr "Ninguém"
+
+#: templates/plugins/timeline_plugin.html:21
+msgid "Timeline Entry Left Image"
+msgstr ""
+
+#: templates/plugins/timeline_plugin.html:28
+msgid "Timeline Entry Right Image"
+msgstr ""
+
+#: templates/plugins/timeline_plugin.html:34
+msgid "No timeline entries!"
+msgstr "Sem registros da linha do tempo!"

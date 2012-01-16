@@ -1,0 +1,68 @@
+/* Sidebar */
+
+.sidebar ul {
+	list-style: none;
+	line-height: normal;
+	padding: 0;
+}
+
+.sidebar li ul {
+	border: none;
+	background: none;
+}
+
+.sidebar img {
+	width: 200px;
+	height: auto;
+	margin: 0 auto;
+}
+
+
+/* Leftbar */
+
+#leftbar {
+	float: left;
+	width: 200px;
+}
+
+/* Center */
+
+#center {
+	float: left;
+	width: 500px;
+	margin: 0px 25px;
+}
+
+/* Rightbar */
+
+#rightbar {
+	float: left;
+	width: 200px;
+}
+
+#rightbar {
+	width: 200px;
+	height: auto;
+}
+
+#join_us {
+	color: white;
+	background-color: #3C3C3C;
+	padding: 5px 20px;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#join_us h2 {
+	line-height: normal;
+}
+
+#join_us a {
+	color: white;
+}
+
+#join_us a:hover {
+	text-decoration: none;
+}

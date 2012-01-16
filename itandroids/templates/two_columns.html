@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load cms_tags sekizai_tags %}
+
+{% block base_content %}
+{% addtoblock "css" %}
+<link href="/media/css/two_columns.css" media="screen" rel="stylesheet" type="text/css" />
+{% endaddtoblock %}
+<div id="left_column">
+	{% placeholder left_column %}
+</div>
+<div id="right_column">
+	{% placeholder right_column %}
+</div>
+{% endblock %}

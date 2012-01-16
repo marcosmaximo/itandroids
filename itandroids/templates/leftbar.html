@@ -1,0 +1,34 @@
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<div id="sponsorship">
+	<h2>{% trans "Sponsorship" %}</h2>
+	{% if sponsor_list %}
+	<ul>
+		{% for sponsor in sponsor_list %}
+		<li>
+			<a href="{{ sponsor.url }}"><img alt="{% trans "Sponsor Image" %}" src="{{ sponsor.image.url }}" /></a>
+		</li>
+		{% endfor %}
+	</ul>
+	{% else %}
+	<p>
+		{% trans "No sponsors!" %}
+	</p>
+	{% endif %}
+</div>
+<div id="support">
+	<h2>{% trans "Support" %}</h2>
+	{% if supporter_list %}
+	<ul>
+		{% for supporter in supporter_list %}
+		<li>
+			<a href="{{ supporter.url }}"><img alt="{% trans "Supporter Image" %}" src="{{ supporter.image.url }}" /></a>
+		</li>
+		{% endfor %}
+	</ul>
+	{% else %}
+	<p>
+		{% trans "No supporters!" %}
+	</p>
+	{% endif %}
+</div>

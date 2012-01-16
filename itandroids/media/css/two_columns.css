@@ -1,0 +1,10 @@
+#left_column {
+	float: left;
+	width: 350px;
+	margin-right: 50px;
+}
+
+#right_column {
+	float: right;
+	width: 550px;
+}

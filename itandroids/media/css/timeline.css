@@ -1,0 +1,109 @@
+.timeline {
+	float: left;
+	position: relative;
+	margin-left: 95px;
+	padding-left: 20px;
+	border-left: 2px solid #666666;
+}
+
+.timeline_year {
+	position: absolute;
+	top: 19px;
+	left: -100px;
+	color: #666666;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.timeline_inner_circle {
+	position: absolute;
+	top: 16px;
+	left: -33px;
+	width: 20px;
+	height: 20px;
+	background: #666666;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.timeline_outer_circle {
+	position: absolute;
+	top: 13px;
+	left: -36px;
+	width: 26px;
+	height: 26px;
+	background: #FFFFFF;
+	-moz-border-radius: 13px;
+	-webkit-border-radius: 13px;
+}
+
+/* Solução baseada em
+ * http://jonrohan.me/guide/css/creating-triangles-in-css/
+ */
+.timeline_entry_bubble {
+	float: left;
+	background-color: #EDEDED;
+	border: 2px solid #666666;
+	line-height: 1.3em;
+	padding: 10px;
+	position: relative;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-box-shadow: 0 0 5px #888888;
+	-webkit-box-shadow: 0 0 5px #888888;
+	margin: 10px auto;
+}
+
+.first_timeline_entry {
+	margin-top: 0;
+}
+
+.last_timeline_entry {
+	margin-bottom: 0;
+}
+
+.timeline_entry_bubble_arrow_border {
+	border-color: transparent #666666 transparent transparent;
+	border-style: solid;
+	border-width: 10px;
+	height: 0;
+	width: 0;
+	position: absolute;
+	top: 15px;
+	left: -21px;
+}
+
+.timeline_entry_bubble_arrow {
+	border-color: transparent #EDEDED transparent transparent;
+	border-style: solid;
+	border-width: 10px;
+	height: 0;
+	width: 0;
+	position: absolute;
+	top: 15px;
+	left: -18px;
+	
+	/* Para o IE6 */
+	_border-left-color: pink;
+    _border-bottom-color: pink;
+    _border-right-color: pink;
+    _filter: chroma(color=pink);
+}
+
+.timeline_entry_text {
+	float: left;
+	width: 450px;
+	margin: 0 20px;
+}
+
+.timeline_entry_left_image {
+	float: left;
+	width: 100px;
+	height: auto;
+}
+
+.timeline_entry_right_image {
+	float: right;
+	width: 200px;
+	height: 150px;
+}

@@ -1,0 +1,265 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+h1 {
+	font-size: 18px;
+}
+
+h2 {
+	font-size: 16px;
+}
+
+h3 {
+	font-size: 14px;
+}
+
+a img {
+	/* Para evitar bordas em imagens usadas
+	 * como links em alguns browsers (FF, por exemplo)
+	 */
+	border: none;
+}
+
+#wrapper {
+	margin: 0;
+	padding: 0;
+}
+
+/* Menu */
+
+#menubar {
+	width: 100%;
+	height: 60px;
+	background: -moz-linear-gradient(#000000, #2C2C2C); /* FF 3.6+ */  
+    background: -ms-linear-gradient(#000000, #2C2C2C); /* IE10 */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(100%, #2C2C2C)); /* Safari 4+, Chrome 2+ */  
+    background: -webkit-linear-gradient(#000000, #2C2C2C); /* Safari 5.1+, Chrome 10+ */  
+    background: -o-linear-gradient(#000000, #2C2C2C); /* Opera 11.10 */  
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#2C2C2C'); /* IE6 & IE7 */  
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#2C2C2C')"; /* IE8+ */  
+    background: linear-gradient(#000000, #2C2C2C); /* the standard */  
+}
+
+#menu_parent {
+	display: table;
+	width: 950px;
+	height: 60px;
+	margin: 0px auto;
+}
+
+#menu {
+	display: table-cell;
+	vertical-align: bottom;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	display: block;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	padding: 15px 20px;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+	text-decoration: none;
+	background: #2C2C2C;
+	color: #FFFFFF;
+}
+
+#menu .selected a {
+	color: #1C1C1C;
+	background: #FFFFFF;
+}
+
+/* Header */
+
+#header {
+	width: 950px;
+	margin: 0 auto;
+	background: #FFFFFF;
+	border-bottom: 2px solid #A0A0A0;
+	margin-bottom: 4px;
+}
+
+#header_right {
+	float: right;
+}
+
+/* Search */
+
+#search {
+	float: right;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	margin-right: 5px;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#search input {
+	float: left;
+	border: none;
+}
+
+#search input[type=text] {
+	outline: none;
+	width: 160px;
+	height: 25px;
+	margin-right: 0;
+	border: 1px solid #6A6866;
+	background: #6A6866;
+	color: #BCBCBC;
+	font-style: italic;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+	padding: 5px;
+	margin-right: 5px;
+}
+
+#search input[type=text]:hover {
+    border-color: #2C2C2C;
+}
+
+#search input[type=text]:focus {
+    border-color: #2C2C2C;
+}
+
+#search input[type=submit] {
+	width: 25px;
+	height: 25px;
+	padding: 0;
+	margin-left: 0;
+	background: #2D221A;
+	background-image: url('/media/images/search_icon.png');
+	background-repeat: no-repeat;
+	color: #FFFFFF;
+	font-weight: bold;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#search input[type=submit]:hover {
+	background: #333333;
+	cursor: pointer;
+	background-image: url('/media/images/search_icon.png');
+	background-repeat: no-repeat;
+}
+
+/* Header Icons */
+
+#header_icons ul {
+	list-style: none;
+	line-height: normal;
+}
+
+#header_icons li {
+	display: block;
+	float: left;
+	margin: 5px;
+}
+
+#header_icons img {
+	width: auto;
+	height: 30px;
+}
+
+/** LOGO */
+
+#itandroids_logo {
+	width: auto;
+	height: 100px;
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+#itandroids_name {
+	width: auto;
+	height: 45px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+/* Content */
+
+#content {
+	width: 950px;
+	margin: 0 auto;
+	padding: 20px 0;
+	background: #FFFFFF;
+	border-top: 2px solid #DDDDDD;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	width: 1000px;
+	padding: 20px 0;
+	margin: 0 auto;
+}
+
+#footer p {
+	text-align: center;
+	font-size: 11px;
+	color: #5C5C5C;
+}
+
+#footer img {
+	opacity: 0.6;
+	margin-left: 5px;
+	width: auto;
+	height: 15px;
+	vertical-align: text-bottom;
+}
+
+#footer img:hover {
+	opacity: 1.0;
+}
+
+/* Big Link */
+
+.big_link {
+	padding: 10px;
+	cursor: pointer;
+	background: #E50000;
+	font-weight: bold;
+	text-decoration: none;
+	color: white;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.big_link:hover {
+	background: #CB0000;
+}

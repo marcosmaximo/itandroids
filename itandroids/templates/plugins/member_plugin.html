@@ -1,0 +1,53 @@
+{% load i18n lang_extras dict_extras my_utils %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block "addblock" %}
+{% addtoblock "css" %}
+<link href="/media/css/members.css" media="screen" rel="stylesheet" type="text/css" />
+{% endaddtoblock %}
+{% endblock %}
+
+{% for key in keys_ordering %} <h2>{{ key }}</h2>
+{% for member in member_dict|dict_get:key %}
+<div class="entry member_entry{% if forloop.first %} first_entry{% endif %}{% if forloop.last %} last_entry{% endif %}">
+	<img alt="{% trans "Member Photo" %}" src="{{ member.photo.url_100x100 }}" />
+	<h3>{{ member.name }}</h3>
+	{% if member.lattes %} <a href="{{ member.lattes }}"> <img class="lattes_image" alt="{% trans "Lattes" %}" src="/media/images/lattes.png" /></a> {% endif %}
+	<p>
+		{% prop_lang member.relationship_with_ita title LANGUAGE_CODE %}
+	</p>
+	{% if member.special_roles.all %}
+	<p>
+		{% for special_role in member.special_roles.all %}
+		{% prop_lang special_role title LANGUAGE_CODE %}
+		<br/>
+		{% endfor %}
+	</p>
+	{% endif %}
+	{% with associations=member|get_member_category_associations %}
+	{% if associations %}
+	<p>
+		{% for association in associations %}
+		{{ association.get_role_display }} {% trans "of category" %} {% prop_lang association.category title LANGUAGE_CODE %}
+		<br/>
+		{% endfor %}
+	</p>
+	{% endif %}
+	{% endwith %}
+	<p>
+		{% trans "Entry Date" %}: {{ member.entry_date|date:"F Y" }}
+		{% if member.leave_date %}
+		<br />
+		{% trans "Leave Date" %}: {{ member.leave_date|date:"F Y" }}
+		{% endif %}
+	</p>
+	<p>
+		{% prop_lang member description LANGUAGE_CODE %}
+	</p>
+</div>
+{% empty %}
+<p>
+	{% trans "Nobody" %}
+</p>
+{% endfor %}
+{% endfor %}

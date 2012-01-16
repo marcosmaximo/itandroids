@@ -1,0 +1,21 @@
+{% load i18n sekizai_tags lang_extras %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block "addblock" %}
+{% addtoblock "css" %}
+<link href="/media/css/news.css" media="screen" rel="stylesheet" type="text/css" />
+{% endaddtoblock %}
+{% endblock %}
+
+{% for news in news_list %} <a class="news_link" href="{{ news.page.get_absolute_url }}">
+<div class="news" id="{% if forloop.counter == 1 %}first_news{% else %}{% if forloop.counter == 2 %}second_news{% else %}third_news{% endif %}{% endif %}">
+	<img alt="{% trans "News Image" %}" src="{{ news.image.url }}" />
+	<div class="news_title">
+		<h2>{% prop_lang news title LANGUAGE_CODE %}</h2>
+	</div>
+</div> </a>
+{% empty %}
+<p>
+	{% trans "No news!" %}
+</p>
+{% endfor %}

@@ -1,0 +1,24 @@
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+<div id="next_events">
+	<h2>{% trans "Next Events" %}</h2>
+	{% if event_list %}
+	<ul>
+		{% for event in event_list %}
+		<li>
+			<a href="{{ event.url }}"><img alt="{% trans "Event Image" %}" src="{{ event.image.url }}" /></a>
+		</li>
+		{% endfor %}
+	</ul>
+	{% else %}
+	<p>
+		{% trans "No events!" %}
+	</p>
+	{% endif %}
+</div>
+<div id="join_us">
+	<h2>{% trans "Want to join us?" %}</h2>
+	<p>
+		{% trans "Send an email to " %} <a href="mailto:{% trans "ITAndroids RH Email" %}">{% trans "ITAndroids RH Email" %}</a>
+	</p>
+</div>
